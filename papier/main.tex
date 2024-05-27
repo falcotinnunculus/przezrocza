@@ -22,6 +22,8 @@
 %\usepackage{rotating}
 %\usepackage{anyfontsize} % change font size for semposiwko
 \usepackage{siunitx}
+\usepackage{soul}
+
 
 
 \usepackage[natbib, language=polish, sorting=none]{biblatex}
@@ -36,6 +38,9 @@
 \setbeamercolor{palette quaternary}{bg=violet!20!black,fg=white}
 \setbeamercolor{structure}{fg=violet!60!black}
 \setbeamertemplate{caption}{\insertcaption}
+\makeatletter
+\beamer@theme@subsectionfalse
+\makeatother
 % \setbeamertemplate{headline}{
 %   \begin{beamercolorbox}[wd=.9\paperwidth]{headline}
 %     \vspace{1.5ex}
@@ -94,19 +99,19 @@ s%
 
 \begin{column}{0.5\textwidth}
     \begin{itemize}
-        \item zasadniczo nie przewodzi prądu
+        \item \only<1>{nie przewodzi prądu} \only<2>{\st{nie~przewodzi~pradu}}
         \item jest nieprzezroczysty
         \item jest chropowaty
-        \item jest porowaty i niewodoodporny
+        \item jest porowaty i~niewodoodporny
     \end{itemize}
-\end{column}
+\end{column}\pause
 \begin{column}{0.5\textwidth}
     \begin{itemize}
         \item jest tani (tańszy nawet niż plastik)
         \item jest łatwy w produkcji
         \item jest ekologiczny
         \item jest giętki
-        \item zasadniczo nie przewodzi prądu
+        \item nie przewodzi prądu
     \end{itemize}
     % \pause
     \end{column}
@@ -121,7 +126,16 @@ s%
 \end{frame}
 
 \begin{frame}{Jak pozbyć się wad}
-    
+        \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.7\linewidth]{fig1}
+        \caption{a) Schematic showing the hierarchical structure of a tree. b,c) Schematic illustrating structure of (b) a regular paper and (c) TEMPO-oxidized wood fibers and the corresponding chemical structures of the constituent cellulose. d) SEM images of a regular paper and TEMPO-oxidized transparent paper. The transparent paper shows fewer porous air cavities and thus higher packing density of cellulose fibers than the regular paper, resulting in high transmission.\\
+        \typeout{}
+        [source: \url{https://doi.org/10.1002/adma.200803174}]
+        }
+        % \label{fig:enter-label}
+        
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Lista zastosowań}
@@ -170,7 +184,7 @@ s%
         \centering
         \includegraphics[width=0.75\linewidth]{fig2.png}
         \caption{a–c) Paper transfer and removal process. (a) The transparent cellulose paper used as an antireflection coating. (b) Transfer of the transparent paper antireflection coating on a GaAs solar cell. PVAc is used as a binding material. (c) The cell with the transparent cellulose paper antireflection coating on top. d) The paper can be removed as needed. e) A SEM image showing cellulose fibers within the transparent paper antireflection coating.\\
-        \typeout{twoja stara sra do gara}
+        \typeout{}
         [source: \url{https://doi.org/10.1002/aenm.201301804}]
         }
         % \label{fig:enter-label}
@@ -179,17 +193,25 @@ s%
 
 \end{frame}
 \begin{frame}{Jak to naprawić za pomocą papieru II}
-    \typeout{a twój stary to wpierdala}
+    \typeout{}
 
     \begin{figure}[h]
         \centering
-         \includegraphics[width=0.65\linewidth]{fig3.png}
+                \begin{columns}
+        \begin{column}{0.65\textwidth}
+        \includegraphics[width=\textwidth]{fig2f.jpg}
+        \end{column}
+        \begin{column}{0.35\textwidth}
          \caption{
-         Transparent paper ARC reduces reflection over a wide range of incident angles and wavelengths. For the bare GaAs cell, contour plots of a) measured and b) calculated reflectivity as a function of incident angle \typeout{dx}(from 10\si\degree to 55\si\degree)\typeout{xd} and wavelength (from 400 nm to 900 nm) are in close agreement. The addition of a transparent paper ARC greatly reduces the measured reflection (c) over all angles and wavelengths. Calculations using an incoherent reflection model accurately predict the expected reduction of the reflectivity (d). Differences between the experiment and the calculations near $\lambda$ = 430 nm are predominately due to differences in the optical properties of the GaAs used and are independent of the paper ARC.\\ \typeout{twoja stara to kopara}
+         Transparent paper ARC reduces reflection over a wide range of incident angles and wavelengths. For the bare GaAs cell, contour plots of a) measured and b) calculated reflectivity as a function of incident angle \typeout{} and wavelength (from 400 nm to 900 nm) are in close agreement. The addition of a transparent paper ARC greatly reduces the measured reflection (c) over all angles and wavelengths. Calculations using an incoherent reflection model accurately predict the expected reduction of the reflectivity (d). Differences between the experiment and the calculations near $\lambda$ = 430 nm are predominately due to differences in the optical properties of the GaAs used and are independent of the paper ARC. 
+        %  e,f) Measured electronic properties with and without the transparent paper-based antireflection coating on a GaAs solar cell. (e) EQEs are measured over the operational spectrum of a GaAs solar cell. Blue solid line indicates the measured EQE of a bare GaAs solar cell. Two different EQE measurements with the transparent paper-based ARC (red solid and dotted lines) confirm improved electronic characteristic induced by absorptivity enhancements. (f) Current–voltage characteristics with (red solid line) and without (blue solid line) the transparent paper-based ARC are determined. Increased light absorption within the active material improves the short-circuit current density by $\approx20\%$, which in turn results in $\approx24\%$ enhanced power conversion efficiency with a little enhancement in the fill factor.\\ 
+         \typeout{}
 	        [source: \url{https://doi.org/10.1002/aenm.201301804}]
          }
 %         \label{fig:enter-label}
-        \typeout{nasrałem}
+        \typeout{}
+                        \end{column}
+        \end{columns}
     \end{figure}
 \end{frame}
 
@@ -199,27 +221,142 @@ s%
 \begin{frame}{Obwody elektroniczne}
 
 \begin{itemize}
-\item problem:
+\item problem: elastyczne układy elektroniczne
+\item dodatkowe wymagania: przezroczystość, lekkość, ekologiczność
+\item rozwiązanie: papier
 \end{itemize}
     
 \end{frame}
 
+\begin{frame}{Jak to rozwiązać za pomocą papieru I }
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{fig4.jpg}
+        \caption{a) Schematic showing the organic FET with a nanopaper substrate. Inset molecular structure shows F15-NTCDI semiconductor. b) A picture of the real fabricated device when it is bent. c) Measured optical transmittance of nanopaper used in this study and the fabricated device ($\approx$89\% and $\approx$84\% at a wavelength of 550 nm, respectively). d) Measured drain–source current–voltage characteristics ($I_{SD}$–$V_{SD}$) of the device for each applied gate voltage from 0 to 80 V. e) Transfer characteristic of the device when $V_{SD}$ = 10 V is measured. Inset shows how much gate leakage current is measured under gate voltage. f) Transfer characteristics of the device when it is bent. Black solid line, red dashed line, and blue dashed line represent measured transfer characteristics when the device is not bent, bent in vertical to the direction of conduction channel, and bent in parallel to the direction of conduction channel, respectively.\\ \typeout{}
+        [source: \url{https://doi.org/10.1021/nn304407r}]}
+        % \label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Jak to rozwiązać za pomocą papieru II }
+    \begin{figure}
+        \centering
+        \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{fig5.jpg}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+        \caption{a) SEM images showing two different types of papers. Type A has more porous cavities while type B is highly packed. b) Schematic of the field effect transistor using cellulose paper as a gate dielectric. c) I–V transfer characteristics measured at saturation region (drain voltage of 15 V) for devices with two different types of papers. Measurements are conducted at room temperature. d) An image showing paper-based CMOS inverter with p-type TFT (a gate width to length (W/L) ratio of 21.8) and n-type TFT (W/L ratio of 11.8). e) Device transfer characteristic of the paper-based CMOS inverter with the corresponding gain.\\ \typeout{}
+        [source: \url{https://doi.org/10.1109/LED.2008.2001549}, \url{https://doi.org/10.1002/adfm.201202907}]}
+        % \label{fig:my_label}
+                \end{column}
+        \end{columns}
+    \end{figure}
+\end{frame}
+
+\section{Ekrany}
+
+\begin{frame}{Ekrany}
+    \begin{itemize}
+\item problem: elastyczne ekrany
+\item dodatkowe wymagania: przezroczystość, lekkość, ekologiczność
+\item rozwiązanie: papier
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ekranowanie}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{fig8.jpg}
+        \caption{a) A picture showing an operation of an OLED based on a flexible and transparent cellulose nanocomposite with low coefficient of thermal expansion. b) A picture showing an OLED on bacterial cellulose nanocomposite. The fabricated OLED can emit light even when it is bent. c–e) The OLED on plastic-paper hybrid substrate. (c) Schematic showing the layer information of the device. (d) The OLED atop plastic-paper hybrid substrate operates well when it is bent, confirming its shape stability and flexibility. (e) Current and light output efficiency are determined as a function of operation voltage.\\\typeout{}
+        [sources: \url{https://doi.org/10.1016/j.compscitech.2009.04.017}, \url{https://doi.org/10.1016/j.indcrop.2011.06.025}, \url{https://doi.org/10.1039/C6EE01011C}]}
+        % \label{fig:my_label}
+    \end{figure}
+\end{frame}
+
 \section{Magazynowanie energii}
 
-\begin{frame}{Frame Title}
+\begin{frame}{Magazynowanie energii}
+
+\begin{itemize}
+    \item problem: elastyczne, tanie, cienkie magazyny energii
+\end{itemize}
     
+\end{frame}
+
+\begin{frame}{Papier}
+        \begin{figure}
+        \centering
+        \begin{columns}
+        \begin{column}{0.55\textwidth}
+        \includegraphics[width=\textwidth]{fig9.jpg}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+        \caption{a) Schematic showing the fabrication process of a flexible Ni/MnO2-FP positive electrode. b) Schematic showing the device constructed with an Ni/MnO2-FP positive and an Ni/AC-FP negative electrodes with PVA/Na2SO4 electrolyte. c) A picture shows the device's mechanical stability. d) A picture shows an LED powered up by two supercapacitors connected in series. e) Measured CV curves confirming the good electrochemical characteristic of the paper electrode-based supercapacitor. Measurements are performed at a scan rate of 100 \si{\milli\volt\per\second} when potential windows are varying from 1.0 to 2.5 V. f) Areal and volume capacitance are determined from the measured CV curves under different potential windows.\\ \typeout{}
+        [source: \url{https://doi.org/10.1021/acsnano.5b06648}]}
+        % \label{fig:my_label}
+                \end{column}
+        \end{columns}
+    \end{figure}
 \end{frame}
 
 \section{Anteny}
 
-\begin{frame}{Frame Title}
-    
+\begin{frame}{Anteny}
+    \begin{itemize}
+        \item problem 1: anteny o dowolnych kształtach
+        \item problem 2: anteny elastyczne
+        \item dodatkowe wymagania: wytrzymałość, możliwość strojenia
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Jak zrobić z papieru I}
+        \begin{figure}
+        \centering
+        \begin{columns}
+        \begin{column}{0.65\textwidth}
+        \includegraphics[width=\textwidth]{fig10a.jpg}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+        \caption{a,b) A 3D antenna based on paper substrate. (a) A picture showing the fabricated paper-based antenna patterned with a silver ink-contained ballpoint pen. (b) Measured reflected power confirms communication capability of the paper-based antenna. c) Return losses of paper-based foldable antennas can be tuned depending on how much the paper is folded. Solid line shows the return loss of an unfolded antenna and dotted line shows that of a folded antenna.   \typeout{}
+        [sources: \url{https://doi.org/10.1002/adma.201101328}, \url{https://doi.org/10.1039/C3NR00231D}]}
+        % \label{fig:my_label}
+                \end{column}
+        \end{columns}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Jak zrobić z papieru II}
+        \begin{figure}
+        \centering
+        % \begin{columns}
+        % \begin{column}{0.6\textwidth}
+        \includegraphics[width=0.8\textwidth]{fig10b.jpg}
+        % \end{column}
+        % \begin{column}{0.35\textwidth}
+        \caption{d–g) A paper-based antenna for Wi-Fi communication. (d) Pictures showing a 30 mm long dipole antenna atop 50 µm thick nanopaper (left) and a 17 mm long dipole antenna atop 50 µm thick silver nanowire/nanopaper composite (right). (e) Return losses of the 30 mm long dipole antenna (solid line) and 17 mm long antenna on the silver nanowire/nanopaper composite (dashed line). (f) Pictures taken during bending of the nanopaper antenna and when it is restored. (g) The return loss of the nanopaper antenna before (solid line) and after (dashed line) 1001 cycles of bending test.\\  \typeout{}
+        [source: \url{https://doi.org/10.1002/adma.201404555}]}
+        % \label{fig:my_label}
+                % \end{column}
+        % \end{columns}
+    \end{figure}
 \end{frame}
 
 \section{Podsumowanie}
 
-\begin{frame}{Frame Title}
-    
+\begin{frame}{Podsumowanie}
+    \begin{itemize}
+        \item papier znalazł wiele zastosowań w elektronice$^1$ ze względu na elastyczność
+        \item jesteśmy w stanie zastosować przezroczysty papier 
+        \item możemy wykorzystywać zarówno papier matowy (fotowoltaika) jak i błyszczący (ekrany)
+        \item papier jest dobrym izolatorem, ale potrafimy zamienić go w przewodnik
+        \item można wykorzystać elastyczność papieru do np. strojenia anten
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Bibliografia}
+\nocite{Ha_Fang_Zhitenev_2018}
+                \printbibliography[heading=none]
 \end{frame}
 
 \begin{frame}{}
