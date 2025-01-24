@@ -23,6 +23,8 @@
 \usepackage{anyfontsize} % change font size for semposiwko
 
 \usepackage{physics}
+\usepackage{array}
+\usepackage{booktabs}
 
 \usepackage{listings}
 \lstset{
@@ -197,14 +199,47 @@ Disadvantages:
 
 \begin{frame}{Grid storage}{}
     
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{2025-01-24-02-50-12.png}
+    \caption{Beacon Power's frequency regulation plant in Hazle, PA (source: \url{doi.org/10.1109/IECON.2018.8591842})}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Transportation}{}
     
+   \begin{columns}
+    \column{0.45\textwidth}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{2025-01-24-02-44-34.png}
+    \caption{Section view of the ALPS (Advanced Locomotive Propulsion System) composite flywheel (source: \url{doi.org/10.1109/VETECF.2003.1286244})}
+\end{figure}
+    \column{0.45\textwidth}
+    
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{2025-01-24-03-17-27.png}
+    \caption{ALPS schematic diagram (source: \url{hdl.handle.net/2152/33077})}
+\end{figure}
+%     \column{0.3\textwidth}
+   
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{2025-01-24-01-54-11.png}
+%     \caption{Fidget spinner (source: \url{w.wiki/CpZ5})}
+% \end{figure}
+\end{columns} 
 \end{frame}
 
 \begin{frame}{Space applications}{}
     
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{2025-01-24-03-33-21.png}
+    \caption{Flywheel Energy Storage System (FESS) architecture for the International Space Station (source: \url{doi.org/10.1109/6.993788})}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Comparison}{}
@@ -212,9 +247,10 @@ Disadvantages:
         \scriptsize
 % \centering
 \caption{Flywheel applications comparison (source: \url{hdl.handle.net/2152/33077})}
-% \begin{tabular}{|>{\raggedright\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
-\hspace{-2cm}
-\begin{tabular}{c|c|c|c}
+\begin{tabular}{|>{\raggedright\arraybackslash}m{0.22\textwidth}|>{\centering\arraybackslash}m{0.22\textwidth}|>{\centering\arraybackslash}m{0.22\textwidth}|>{\centering\arraybackslash}m{0.22\textwidth}|}
+% \hspace{-1.9cm}
+\hfill
+% \begin{tabular}{c|c|c|c}
 \hline
 \textbf{Parameter} & \textbf{ALPS System} & \textbf{Transit Bus System} & \textbf{NASA Space Station} \\ \hline
 Energy Stored (kW-hr) & 133 & 2 & 3.6 \\ \hline
@@ -228,16 +264,19 @@ Bearings & Homopolar Magnetic & Homopolar Magnetic & Homopolar Magnetic \\ \hlin
 Flywheel Design & UT-CEM Cylindrical & UT-CEM Cylindrical & UT-CEM Cylindrical \\ \hline
 Rotor Tip Speed (m/s) & 950 & 935 & 920 \\ \hline
 \end{tabular}
+\hfill
 \end{table}
 \end{frame}
 
-\section{How }
+% \section{How }
 
-\section{Future}
+% \section{Future}
 
-\begin{frame}
+% \begin{frame}
     
-\end{frame}
+% \end{frame}
+
+\section{}
 
 \begin{frame}{}
 
@@ -245,7 +284,7 @@ Rotor Tip Speed (m/s) & 950 & 935 & 920 \\ \hline
 
 \centering
     \begin{tikzpicture}
-      \duck[parrot, body=gray!30!yellow, head=gray!30!yellow, bill=red, torch=gray!70!brown, tshirt=white!20!black, strawhat=brown!50!white, ribbon=gray, bowtie=blue!50!white]
+      \duck[parrot, body=gray!30!yellow, head=gray!30!yellow, bill=red, torch=gray!70!brown, tshirt=red!30!black, strawhat=brown!50!white, ribbon=gray, bowtie=blue!50!white]
       %\addwater{blue!50!cyan}
       \fill[cyan!20!white] (-1.4,1.8) ellipse (1.8 and 0.5);
   \fill[cyan!20!white] (-0.2,1.54) -- (0.2,1.35) -- (0.0,1.6) -- cycle;
