@@ -2,6 +2,8 @@
 Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from all my life.
 
 ## list
+[Magnetyczny rezonans jądrowy w nanoskali](nm) -- 2025-01-28, Specialisation Seminar I (biophysics)
+
 [Flywheels](red_energy) -- 2025-01-24, Green Energy course
 
 [Materia zabrana z kosmosu](kosmos) -- 2024-06-11, Cosmic Rays course
