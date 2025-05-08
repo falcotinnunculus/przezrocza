@@ -1,0 +1,28 @@
+\documentclass[tikz]{standalone}
+
+\begin{document}
+
+\begin{tikzpicture}
+\foreach \x in {0,1,2} {
+  \foreach \y in {0,1,2} {
+    \node[circle, draw, minimum size=0.8cm] at (\x,\y) {};
+  }
+}
+
+% Example spins (arrows up/down)
+\foreach \pos/\dir in {
+  {0/0}/up,
+  {1/0}/down,
+  {2/0}/up,
+  {0/1}/up,
+  {1/1}/up,
+  {2/1}/down,
+  {0/2}/down,
+  {1/2}/up,
+  {2/2}/down
+} {
+  \node at (\pos) {\ifthenelse{\equal{\dir}{up}}{$\uparrow$}{$\downarrow$}};
+}
+\end{tikzpicture}
+
+\end{document}
