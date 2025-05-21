@@ -3,6 +3,8 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
+[Nie oceniaj ksiązki po okładce](twink) -- 2025-05-21, Thematical Spring Interdisciplinary Scientific Conference 2025
+
 [USG i endoskopia: aparatura medyczna w 30 sekund](sb2) -- 2025-03-05, Specialisation Seminar II (biophysics)
 
 [Magnetyczny rezonans jądrowy w nanoskali](nm) -- 2025-01-28, Specialisation Seminar I (biophysics)
