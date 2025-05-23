@@ -211,7 +211,7 @@ s%
   % \node at (0,2.8) {\Large \textbf{Why Listen to Satellites?}};
 \pause
   % Annotation bubble
-  \node[align=left, text width=6cm, anchor=west] at (3,-1.5) {
+  \node[align=left, text width=6cm, anchor=west] at (4,-1.5) {
     \textbf{motivation:}\\
     \begin{itemize}[<+->]
       \item access real-time scientific data from space
@@ -354,9 +354,9 @@ s%
 
   % Second row: Network
   \node[draw, rectangle, rounded corners, fill=orange!10] (network) at ($(pi.south)+(0,-2)$) {Local Network\\ \& Internet};
-  \node[draw, rectangle, fill=purple!10] (server) at ($(network.east)-(3.5,0)$) {SatNOGS Server};
-  \node[draw, rectangle, rounded corners, fill=red!10] (analysis) at ($(server.south)+(0,-2)$) {Data Processing};
-  \node[draw, rectangle, rounded corners, fill=white] (ui) at ($(pi.south)+(-2,-2)$) {User Web UI};
+  \node[draw, rectangle, fill=purple!10] (server) at ($(network.east)-(6.5,0)$) {SatNOGS Server};
+  \node[draw, rectangle, rounded corners, fill=red!10] (analysis) at ($(server.south)+(0,-1.5)$) {Data Processing};
+  \node[draw, rectangle, rounded corners, fill=white] (ui) at ($(pi.south)+(-7,-0)$) {User Web UI};
 
   % Connections
   \draw[->] (antenna) -- node{RF signal} (coax);
@@ -366,7 +366,7 @@ s%
   \draw[->] (network) -- node{HTTP/API} (server);
   \draw[->] (server) -- node{retrieves data} (analysis);
   \draw[->] (server) -- node{push observation} (pi);
-  \draw[->] (server) -- node{Visualization} (ui);
+  \draw[->] (server) -- node{visualization} (ui);
   \draw[->] (analysis) -- node{spectrograms, metrics} (server);
 
   % Title
@@ -396,7 +396,7 @@ s%
 \draw (3.75,9.75) -- (8.75,7.75);
 \end{tikzpicture}
 }%
-\label{fig:my_label}
+% \label{fig:my_label}
 \end{figure}
 \column{0.5\textwidth}
 
@@ -409,7 +409,7 @@ s%
 \only<2>{\begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{images/2025-05-22-02-17-05.png}
- \caption{the antenna with RTL-SDR dongle just outside the Garage's window}
+ \caption{the antenna with RTL-SDR dongle just outside the window}
  \end{figure}}
 
 \end{columns}
@@ -436,7 +436,7 @@ s%
 \end{frame}
 
 
-\section{SatNOGS}
+\section{satnogs}
 
 \begin{frame}{satnogs: concept}
   \begin{figure}
@@ -456,21 +456,76 @@ s%
   
 \end{frame}
 
-\section{results}
-\begin{frame}{bad results}{}
+\section{observations}
+
+\begin{frame}{good observations I }{}
+\begin{columns}
+
+\column{0.5\textwidth}
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=0.5\textwidth, angle=270]{images/2025-05-23-11-18-50.png}
+%  \caption{satellite 44886, transmitter: mode U}
+%  \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-23-11-22-57.png}
+ \caption{satellite DhabiSat, transmitter: BPSK}
+ \end{figure}
+\column{0.5\textwidth}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-23-11-19-51.png}
+ \caption{satellite SITRO-AIS-9, transmitter: GMSK}
+ \end{figure}
+\end{columns}
+\end{frame}
+\begin{frame}{good observations II}{}
 
 \begin{columns}
 
 \column{0.5\textwidth}
 \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth, angle=90]{images/2025-05-22-21-10-28.png}
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-23-11-38-44.png}
+ \caption{satellite ISS, transmitter V/U FM}
+ \end{figure}
+\column{0.5\textwidth}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-23-11-47-10.png}
+ \caption{satellite Reaktor Hello World, transmitter: GFSK}
+ \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{decoding signal}{}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.3\textwidth, angle=270]{images/2025-05-23-11-31-29.png}
+ \caption{satellite: LUSAT, transmitter: TLM}
+ \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.7\textwidth]{images/2025-05-23-11-32-15.png}
+%  \caption{}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{bad observations}{}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-22-21-10-28.png}
  \caption{bad result -- no signal}
  \end{figure}
 \column{0.5\textwidth}
 \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth, angle=90]{images/2025-05-22-21-03-20.png}
+ \includegraphics[width=0.6\textwidth, angle=270]{images/2025-05-22-21-03-20.png}
  \caption{also a bad result -- tangent-like signal means terrestrial noise}
  \end{figure}
 \end{columns}
