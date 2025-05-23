@@ -143,7 +143,7 @@ s%
 \subtitle{Building a Low-Cost Ground Station with SatNOGS}
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski}
 \institute[kmpsuj, sempowisko]{KMPS UJ \\biophysics, FAIS, Jagiellonian University in Kraków} 
-\date[dzisiaj]{\SeMPowisko{} 2025\\today}
+\date[dzisiaj]{Interdisciplinary Math-Science Student Konference \\ \SeMPowisko{} 2025\\today}
 
 \begin{document}
 
@@ -213,7 +213,7 @@ s%
   % Annotation bubble
   \node[align=left, text width=6cm, anchor=west] at (4,-1.5) {
     \textbf{motivation:}\\
-    \begin{itemize}[<+->]
+    \begin{itemize}
       \item access real-time scientific data from space
       \item study RF propagation and satellite orbits
       \item contribute to global open-source networks (SatNOGS)
@@ -356,7 +356,7 @@ s%
   \node[draw, rectangle, rounded corners, fill=orange!10] (network) at ($(pi.south)+(0,-2)$) {Local Network\\ \& Internet};
   \node[draw, rectangle, fill=purple!10] (server) at ($(network.east)-(6.5,0)$) {SatNOGS Server};
   \node[draw, rectangle, rounded corners, fill=red!10] (analysis) at ($(server.south)+(0,-1.5)$) {Data Processing};
-  \node[draw, rectangle, rounded corners, fill=white] (ui) at ($(pi.south)+(-7,-0)$) {User Web UI};
+  \node[draw, rectangle, rounded corners, fill=white] (ui) at ($(pi.south)+(-9,-0)$) {User Web UI};
 
   % Connections
   \draw[->] (antenna) -- node{RF signal} (coax);
@@ -406,10 +406,15 @@ s%
   \item distance between rods: $d=\frac{3\lambda}{8}=\frac{3c}{8f}=25.8$ cm
   \item interference: constructive 
 \end{itemize}}
-\only<2>{\begin{figure}
+\only<3>{\begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{images/2025-05-22-02-17-05.png}
  \caption{the antenna with RTL-SDR dongle just outside the window}
+ \end{figure}}
+ \only<2>{\begin{figure}
+ \centering
+ \includegraphics[width=0.7\textwidth]{images/2025-05-23-13-21-47.png}
+ \caption{insides of antenna}
  \end{figure}}
 
 \end{columns}
@@ -499,7 +504,7 @@ s%
 \end{columns}
 \end{frame}
 
-\begin{frame}{decoding signal}{}
+\begin{frame}{decoding signal I}{}
 \begin{figure}
  \centering
  \includegraphics[width=0.3\textwidth, angle=270]{images/2025-05-23-11-31-29.png}
@@ -508,6 +513,20 @@ s%
 \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{images/2025-05-23-11-32-15.png}
+%  \caption{}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{decoding signal II}{}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.3\textwidth, angle=270]{images/2025-05-23-13-25-51.png}
+ \caption{satellite: CIRBE, transmitter: GFSK}
+ \end{figure}
+ \vspace{-0.5cm}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth]{images/2025-05-23-13-26-44.png}
 %  \caption{}
  \end{figure}
 \end{frame}
