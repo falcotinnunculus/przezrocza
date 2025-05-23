@@ -3,7 +3,9 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
-[Nie oceniaj ksiązki po okładce](twink) -- 2025-05-21, Thematical Spring Interdisciplinary Scientific Conference 2025
+[Talking with the Satellites: Building a Low-Cost Ground Station with SatNOGS](sempowisko2025) -- 2025-05-23, SeMPowisko 2025
+
+[Nie oceniaj ksiązki po okładce](twink) -- 2025-05-21, This Year's Spring Interdisciplinary Scientific Conference 2025
 
 [USG i endoskopia: aparatura medyczna w 30 sekund](sb2) -- 2025-03-05, Specialisation Seminar II (biophysics)
 
