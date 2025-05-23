@@ -41,7 +41,7 @@ breaklines=true
 \usepackage{subcaption}
 
 
-\usepackage[natbib, language=polish, sorting=none]{biblatex}
+\usepackage[natbib, sorting=none]{biblatex}
 \addbibresource{lio.bib}
 \renewcommand*{\bibfont}{\scriptsize}
 
@@ -103,6 +103,11 @@ breaklines=true
       \includegraphics[scale=0.4, angle=25]{ptaki.pdf}
       }
       ;
+    \node[yshift=-2cm,xshift=-2cm,opacity=0.1] at (current page.north east)
+      {
+      \includegraphics[scale=0.1, angle=0]{zarowki.pdf}
+      }
+      ;
     \node[yshift=1.0cm,xshift=0.6cm] (logopos) at (current page.south west) {{\begin{tikzpicture}\shuffleducks\duck[signpost=\insertframenumber, \randomhead,scale=.4]\end{tikzpicture}}};
     \pgfmathsetmacro{\progress}{360*(\insertframenumber)/(\inserttotalframenumber)};
     \draw[line width=0.2*3pt] ([xshift=0.55cm] logopos)  arc[radius=0.55cm, start angle=0, end angle=\progress];
@@ -131,12 +136,13 @@ s%
 
 % \newcommand\Tikz{Ti\emph{k}Z}
 % \definecolor{neworange}{RGB}{255,140,0}
+\renewcommand{\figurename}{figure}
 
 
-\title{Talking with the Satellites}
+\title[talking with the satellites]{Talking with the Satellites}
 \subtitle{Building a Low-Cost Ground Station with SatNOGS}
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski}
-\institute[KMPS UJ]{KMPS UJ \\biophysics, FAIS, Jagiellonian University in Kraków} 
+\institute[kmpsuj, sempowisko]{KMPS UJ \\biophysics, FAIS, Jagiellonian University in Kraków} 
 \date[dzisiaj]{\SeMPowisko{} 2025\\today}
 
 \begin{document}
@@ -145,13 +151,13 @@ s%
 
 \section{hello}
 
-\subsection{hello}
+% \subsection{hello}
 
 \begin{frame}{satellite rise}
-  \begin{figure}
+\begin{figure}
  \centering
- \includegraphics[width=0.8\textwidth]{images/2025-05-22-16-07-57.png}
- \caption{ number of active satellites by year}
+ \includegraphics[width=0.7\textwidth]{images/2025-05-23-01-28-10.png}
+ \caption{number of satellites launched yearly into LEO (low earth orbit)}
  \end{figure}
 \end{frame}
 
@@ -161,14 +167,14 @@ s%
 \begin{figure}
  \centering
  \includegraphics[width=0.9\textwidth]{images/2025-05-22-16-14-36.png}
-%  \caption{}
+ \caption{a cubesat}
  \end{figure}
 
 \column{0.5\textwidth}
 \begin{figure}
  \centering
  \includegraphics[width=0.9\textwidth]{images/2025-05-22-16-16-01.png}
-%  \caption{}
+ \caption{a cubesat deployer}
  \end{figure}
 \end{columns}
 \end{frame}
@@ -239,9 +245,9 @@ s%
 
 \end{frame}
 
-\begin{frame}{why tho?}{}
+% \begin{frame}{why tho?}{}
   
-\end{frame}
+% \end{frame}
 
 \section{antenna}
 
@@ -302,38 +308,38 @@ s%
 
 % \end{frame}
 
-\begin{frame}{setup}
+% \begin{frame}{setup}
 
-  % System block diagram of SatNOGS station in TikZ
-% Usage: include in LaTeX document with \usepackage{tikz}
-\begin{tikzpicture}[scale=0.8, every node/.style={font=\sffamily}, >=latex]
-  % Ground station
-  \draw[fill=gray!40] (0,0) rectangle (2,1);
-  \node at (1,0.5) {Ground Station};
+%   % System block diagram of SatNOGS station in TikZ
+% % Usage: include in LaTeX document with \usepackage{tikz}
+% \begin{tikzpicture}[scale=0.8, every node/.style={font=\sffamily}, >=latex]
+%   % Ground station
+%   \draw[fill=gray!40] (0,0) rectangle (2,1);
+%   \node at (1,0.5) {Ground Station};
 
-  % RTL-SDR
-  \draw[fill=blue!40] (3,0) rectangle (5,1);
-  \node at (4,0.5) {RTL-SDR};
+%   % RTL-SDR
+%   \draw[fill=blue!40] (3,0) rectangle (5,1);
+%   \node at (4,0.5) {RTL-SDR};
 
-  % Antenna
-  \draw[fill=red!40] (6,0) rectangle (8,1);
-  \node at (7,0.5) {Antenna};
+%   % Antenna
+%   \draw[fill=red!40] (6,0) rectangle (8,1);
+%   \node at (7,0.5) {Antenna};
 
-  % Connections
-  \draw[->] (2,0.5) -- (3,0.5);
-  \draw[->] (5,0.5) -- (6,0.5);
+%   % Connections
+%   \draw[->] (2,0.5) -- (3,0.5);
+%   \draw[->] (5,0.5) -- (6,0.5);
 
-  % Labels
-  \node at (-1,-1) {SatNOGS Station};
+%   % Labels
+%   \node at (-1,-1) {SatNOGS Station};
 
-  \node at (4,-2) {RTL-SDR Dongle};
-  \node at (7,-2) {Antenna};
-  \node at (1,-2) {Ground Station};
+%   \node at (4,-2) {RTL-SDR Dongle};
+%   \node at (7,-2) {Antenna};
+%   \node at (1,-2) {Ground Station};
 
-\end{tikzpicture}
+% \end{tikzpicture}
 
 
-\end{frame}
+% \end{frame}
 
 \begin{frame}{setup}
 
@@ -416,13 +422,13 @@ s%
   \column{0.5\textwidth}
   \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth]{images/2025-05-23-01-09-08.png}
+ \includegraphics[width=0.9\textwidth]{images/2025-05-23-01-09-08.png}
  \caption{rtl-sdr dongle}
  \end{figure}
 \column{0.5\textwidth}
 \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth]{images/2025-05-23-01-10-57.png}
+ \includegraphics[width=0.9\textwidth]{images/2025-05-23-01-10-57.png}
  \caption{raspberry pi}
  \end{figure}
   \end{columns}
@@ -472,18 +478,28 @@ s%
 
 
 \begin{frame}
+
+  \begin{columns}
+\column{0.6\textwidth}
   
 \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth]{images/2025-05-13-15-25-41.png}
+ \includegraphics[width=0.85\textwidth]{images/2025-05-13-15-25-41.png}
 %  \caption{}
  \end{figure}
 
  \centering project co-funded by Garage of Complexity
-
+\column{0.4\textwidth}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-05-23-01-45-08.png}
+%  \caption{}
+ \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{bibliography}{}
+  \nocite{*}
   \printbibliography[heading=none]
 \end{frame}
 
@@ -505,10 +521,10 @@ s%
   \begin{figure}
   \centering
         \includegraphics[height=0.3\linewidth]{images/2025-05-13-15-25-41.png}\\
-  {\tiny \url{https://github.com/falcotinnunculus/przezrocza/blob/wladca/sempowisko2025/sempo.pdf}}
+  {\scriptsize \url{https://github.com/falcotinnunculus/przezrocza/blob/wladca/sempowisko2025/sempo.pdf}}
 
   \end{figure}
-\vspace{-5.25cm}
+\vspace{-5.3cm}
 \transparent{0.7}
   \begin{figure}
       \centering
