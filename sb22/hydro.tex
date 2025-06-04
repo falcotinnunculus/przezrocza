@@ -103,7 +103,7 @@ breaklines=true
       \includegraphics[scale=0.4, angle=25]{ptaki.pdf}
       }
       ;
-    \node[yshift=-2cm,xshift=-2cm,opacity=0.1] at (current page.north east)
+    \node[yshift=-2cm,xshift=-2cm,opacity=0.05] at (current page.north east)
       {
       \includegraphics[scale=0.1, angle=0]{zarowki.pdf}
       }
@@ -174,14 +174,6 @@ Zmiana entropii: To uporządkowanie cząsteczek wody wokół substancji hydrofob
 Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie stan, układ preferuje minimalizowanie kontaktu między cząsteczkami hydrofobowymi a wodą. Oznacza to, że substancje hydrofobowe mają tendencję do agregowania ze sobą, zamiast rozpuszczać się w wodzie, co objawia się ich minimalną rozpuszczalnością.
 \end{frame}
 
-\begin{frame}
-  \begin{figure}
- \centering
- \includegraphics[width=0.6\textwidth]{images/2025-06-03-22-57-41.png}
- \caption{???????}
- \end{figure}
-\end{frame}
-
 \section{Fizyczne podstawy efektu hydrofobowego}
 
 \begin{frame}{Bardzo prosty przykład I}
@@ -206,6 +198,28 @@ Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie st
   energia swobodna węglowodoru rozpuszczanego w rozpuszczalniku: $$\mu_{HC} = \mu_{HC}^{\circ} + RT \ln X_{HC} + RT \ln f_{HC}$$
 
   $$\mu_{HC}^{\circ} - \mu_W^{\circ} = -2436 - 884n_C$$
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth]{images/2025-06-03-22-57-41.png}
+ \caption{???????}
+ \end{figure}
+\end{frame}
+
+\begin{frame}
+  
+kwasy tłuszczowe:
+  $$\mu_{HC}^{\circ} - \mu_W^{\circ} = 4260 - 825n_C$$
+  % $$\mu_{HC}^{\circ} - \mu_W^{\circ} = -2436 - 884n_C$$
+
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-10-01-42.png}
+ \caption{}
+ \end{figure}
+
 \end{frame}
 
 \section{Termodynamika efektu hydrofobowego}
@@ -258,12 +272,28 @@ Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie st
   \textbf{micele} -- agregowane produkty cząsteczek amfifilowych, które samoistnie tworzą się w roztworach wodnych
 \end{frame}
 
-\begin{frame}{Micele: termodynamika}
+\begin{frame}{Micele: termodynamika I}
+
+\begin{itemize}
+  \item \textbf{CMC} (\emph{critical micelle concentration}) -- stężenie surfaktantu, powyżej którego spontanicznie tworzą się micele
+  \item trochę jak \emph{przemiana fazowa} -- poniżej CMC mamy roztwór, powyżej CMC mamy micele
+\end{itemize}
+
   \begin{figure}
  \centering
- \includegraphics[width=0.75\textwidth]{images/2025-06-04-02-08-15.png}
- \caption{}
+ \includegraphics[width=0.65\textwidth, trim={0 5.8cm 0 0}, clip]{images/2025-06-04-02-08-15.png}
+ \caption{Zależność między stężeniem monomerycznym w roztworze a całkowitym dodanym stężeniem w (a) rzeczywistym rozdziale faz i (b) tworzeniu miceli}
  \end{figure}
+\end{frame}
+
+\begin{frame}{Micele: termodynamika II}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-03-35-53.png}
+ \caption{Zależność $(-\ln{} cmc)$ od liczby atomów węgla w łańcuchu węglowodorowym}
+ \end{figure}
+
+  
 \end{frame}
 
 \begin{frame}{Micele: kształt}
@@ -271,15 +301,30 @@ Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie st
   \column{0.5\textwidth}
   parametr upakowania: $$P=\frac{v}{al}$$
   \begin{itemize}
-    \item 
+    \item $v$ -- objętość ogona hydrofobowego
+    \item $a$ -- powierzchnia równowagowa głowy hydrofilowej
+    \item $l$ -- długość ogona hydrofobowego
   \end{itemize}
   \column{0.5\textwidth}
   \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth]{images/2025-06-04-02-56-14.png}
+ \includegraphics[width=0.9\textwidth]{images/2025-06-04-02-56-14.png}
 %  \caption{}
  \end{figure}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Micele: kształt II}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-09-50-07.png}
+ \caption{}
+ \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-09-48-34.png}
+ \caption{}
+ \end{figure}
 \end{frame}
 
 \section{Błony biologiczne}
@@ -289,15 +334,59 @@ Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie st
   
 \end{frame}
 
+\begin{frame}{Mitochondria: przykład błony białkowo-lipidowej}
+  \begin{figure}
+\begin{columns}
+    \column{0.5\textwidth}
+ \centering
+ \includegraphics[width=0.8\textwidth]{images/2025-06-04-08-34-20.png}
+ \column{0.5\textwidth}
+ \caption{Zdjęcie z mikroskopu elektronowego przekroju mitochondrium. Widoczne są dwie błony: wewnętrzna i zewnętrzna. Wewnątrz mitochondrium znajduje się macierz mitochondrialna, a między błonami znajduje się przestrzeń międzybłonowa.}
+\end{columns}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Wykresy eksperymentalne}{}
+\begin{figure}
+\begin{subfigure}{0.3\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-06-04-09-25-13.png}
+ \caption{osłonka mielinowa królika}
+ \end{subfigure}
+ \begin{subfigure}{0.3\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-06-04-09-25-39.png}
+ \caption{błony pręcika siatkówki}
+ \end{subfigure}
+ \begin{subfigure}{0.3\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-06-04-09-26-09.png}
+ \caption{wirus \emph{A. sindbis} (średnia radialna)}
+ \end{subfigure}
+  \caption{Zależność gęstości elektronowej błon biologicznych od odległości}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-07-34-44.png}
+ \caption{\emph{Freeze fracture electron microscopy} błony erytrocytu (na górze: wewnętrze komórki, na dole: zewnętrzna powierzchnia błony)}
+ \end{figure}
+\end{frame}
+
+\section*{}
 
 
-
-\begin{frame}{bibliography}{}
+\begin{frame}{Bibliografia}{}
   \nocite{*}
   \printbibliography[heading=none]
 \end{frame}
 
-\begin{frame}{}{}
+\transblindshorizontal
+
+\begin{frame}{~}{}
+  \transglitter
   \vspace{-1cm}
 \begin{figure}
 \centering
