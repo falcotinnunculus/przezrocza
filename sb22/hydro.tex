@@ -140,6 +140,7 @@ s%
 
 
 \title{Efekt hydrofobowy}
+\subtitle{za: Charles Tanford „The hydrophobic effect: formation of micelles”}
 % \subtitle{Building a Low-Cost Ground Station with SatNOGS}
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski}
 \institute[Seminarium magisterskie]{biofizyka, FAIS, Uniwersytet Jagielloński}
@@ -197,34 +198,42 @@ Minimalizacja kontaktu: Aby zminimalizować ten niekorzystny termodynamicznie st
 
   energia swobodna węglowodoru rozpuszczanego w rozpuszczalniku: $$\mu_{HC} = \mu_{HC}^{\circ} + RT \ln X_{HC} + RT \ln f_{HC}$$
 
+  węglowodory:
   $$\mu_{HC}^{\circ} - \mu_W^{\circ} = -2436 - 884n_C$$
+
+  kwasy tłuszczowe:
+  $$\mu_{HC}^{\circ} - \mu_W^{\circ} = 4260 - 825n_C$$
 \end{frame}
 
 \begin{frame}
   \begin{figure}
+  \begin{subfigure}{0.45\textwidth}
  \centering
- \includegraphics[width=0.6\textwidth]{images/2025-06-03-22-57-41.png}
- \caption{???????}
- \end{figure}
+ \includegraphics[width=0.9\textwidth, trim={3.5cm 2.5cm 3.5cm 0}, clip]{images/2025-06-03-22-57-41.png}
+%  \caption{???????}
+ \end{subfigure}
+   \begin{subfigure}{0.45\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-06-04-10-01-42.png}
+%  \caption{}
+ \end{subfigure}
+ \caption{Zależność między energią swobodną a liczbą atomów węgla w cząsteczce węglowodoru (po lewej) i kwasu tłuszczowego (po prawej)}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
   
-kwasy tłuszczowe:
-  $$\mu_{HC}^{\circ} - \mu_W^{\circ} = 4260 - 825n_C$$
+% kwasy tłuszczowe:
+  % $$\mu_{HC}^{\circ} - \mu_W^{\circ} = 4260 - 825n_C$$
   % $$\mu_{HC}^{\circ} - \mu_W^{\circ} = -2436 - 884n_C$$
 
-  \begin{figure}
- \centering
- \includegraphics[width=0.5\textwidth]{images/2025-06-04-10-01-42.png}
- \caption{}
- \end{figure}
+
 
 \end{frame}
 
-\section{Termodynamika efektu hydrofobowego}
+\section{Model sieciowy}
 
-\begin{frame}
+\begin{frame}{Struktura sieciowa wody}
 
   \begin{columns}
   \column{0.5\textwidth}
@@ -270,6 +279,27 @@ kwasy tłuszczowe:
 
 \begin{frame}{Micele: definicja}{}
   \textbf{micele} -- agregowane produkty cząsteczek amfifilowych, które samoistnie tworzą się w roztworach wodnych
+  \begin{columns}
+  \column{0.5\textwidth}
+  \begin{itemize}
+  \item ogony: hydrofobowy rdzeń
+  \item głowy: hydrofilowa powierzchnia
+  \end{itemize}
+  \column{0.5\textwidth}
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-06-04-10-32-20.png}
+ \caption{schemat miceli}
+ \end{figure}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Micele: ????}
+  $$\mu_{mic,m}=\mu_{mic,m}^\circ +\frac{RT}{m}\ln\frac{X_m}{m}$$
+  \begin{itemize}
+    \item $m$ -- liczba monomerów w miceli
+    \item $X_m$ -- ułamek molowy monomerów w miceli
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Micele: termodynamika I}
