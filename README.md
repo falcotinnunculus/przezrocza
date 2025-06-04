@@ -3,7 +3,9 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
-[Talking with the Satellites: Building a Low-Cost Ground Station with SatNOGS](sempowisko2025) -- 2025-05-23, SeMPowisko 2025
+[Efekt hydrofobowy, za: Charles Tanford  The hydrophobic effect: formation of micelles](sb22) -- 2025-06-04, Specialisation Seminar II (biophysics)
+
+[Talking with the Satellites: Building a Low-Cost Ground Station with SatNOGS](sempowisko2025) -- 2025-05-23, SeMPowisko 2025 konference
 
 [Nie oceniaj ksiązki po okładce](twink) -- 2025-05-21, This Year's Spring Interdisciplinary Scientific Conference 2025
 
