@@ -11,6 +11,7 @@
   % justification=centering, 
   font=scriptsize
 ]{caption}
+\captionsetup{singlelinecheck=off}
 \captionsetup[figure]{textfont={small}}
 \setbeamerfont{caption}{size=\small}
 \usepackage{textcomp}
@@ -47,7 +48,7 @@ breaklines=true
 
 % \usepackage{emoji}
 \usepackage{subcaption}
-
+% \usepackage{enumerate}
 
 \usepackage[natbib, sorting=none, style=authoryear]{biblatex}
 % \usepackage{bibentry}
@@ -229,12 +230,13 @@ WHO TOOK PART IN THE CEREMONY: Alessandro Corbetta, Jasper Meeusen, Chung-min Le
 
 \section{Kiedy ludzie wchodzą w interakcje}
 
-\begin{figure}
+\begin{frame}{}
+  \begin{figure}
  \centering
  \begin{columns}
  \column{0.5\textwidth}
  \centering
- \includegraphics[width=0.9\textwidth]{images/2025-11-13-19-12-20.png}
+ \includegraphics[width=0.85\textwidth]{images/2025-11-13-19-12-20.png}
  \column{0.5\textwidth}
  \caption{Schemat rodzajów siły oddziaływania:}
 
@@ -245,7 +247,27 @@ WHO TOOK PART IN THE CEREMONY: Alessandro Corbetta, Jasper Meeusen, Chung-min Le
 %  dupa
 %  }
  \end{columns}
+\end{figure}
+ \end{frame}
+
+\begin{frame}{}
+  \begin{figure}
+ \centering
+ \begin{columns}
+ \column{0.5\textwidth}
+ \includegraphics[width=0.85\textwidth]{images/2025-11-14-12-14-09.png}
+ \column{0.5\textwidth}
+ \caption[foo]{Proces przygotowania grafu interakcji.
+ \begin{enumerate}[a)]
+  \item inicjalizacja
+  \item \emph{sparsing} -- usuwanie krawędzi nie odpowiadających za oddziaływania
+  \item odparowywanie -- zostawiamy tylko pary
+  \item redukcja ze względu na kierunek
+ \end{enumerate}
+ }
+ \end{columns}
  \end{figure}
+\end{frame}
 
 \begin{frame}{}
   \begin{figure}
@@ -261,7 +283,7 @@ WHO TOOK PART IN THE CEREMONY: Alessandro Corbetta, Jasper Meeusen, Chung-min Le
   \begin{itemize}[<+->]
     \item metoda działa
     \begin{itemize}
-      \item 
+      \item ludzie mają oczy
     \end{itemize}
     \item fizyka działa
   \end{itemize}
