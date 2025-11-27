@@ -1,0 +1,42 @@
+\mode<presentation>
+
+\newif\ifbeamer@secheader
+\beamer@secheaderfalse
+
+\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
+\ProcessOptionsBeamer
+
+%\usecolortheme{crane}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=true]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=true]
+\setbeamertemplate{section page}[default][colsep=-4bp,rounded=true,shadow=true]
+\setbeamertemplate{subsection page}[default][colsep=-4bp,rounded=true,shadow=true]
+
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  
+  \setbeamertemplate{background}%
+{%
+    \begin{tikzpicture}[remember picture,overlay]{\node[yshift=1cm,xshift=-2cm,opacity=0.15] at (current page.south east)
+      {
+      \includegraphics[scale=0.4, angle=20]{logo.png}
+      }
+      ;
+    \node[yshift=0.6cm,xshift=0.6cm] (logopos) at (current page.south west) {{\usebeamercolor[fg]{normal text}\insertframenumber}};
+    \pgfmathsetmacro{\progress}{360*(\insertframenumber)/(\inserttotalframenumber)};
+    \draw[line width=0.2*3pt] ([xshift=0.4cm] logopos)  arc[radius=0.4cm, start angle=0, end angle=\progress];
+    \fill ([shift={(\progress:0.4cm)}] logopos) circle(1pt);
+
+    }
+        \end{tikzpicture}
+    
+}
+
+\mode
+<all>
+
