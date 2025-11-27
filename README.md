@@ -3,6 +3,8 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
+[Modelowanie ruchu pieszych i innych interakcji międzyludzkich](autumn2025) -- 2025-11-15, Vulture Circle Autumn School 2025
+
 [Efekt hydrofobowy, za: Charles Tanford  The hydrophobic effect: formation of micelles](sb22) -- 2025-06-04, Specialisation Seminar II (biophysics)
 
 [Talking with the Satellites: Building a Low-Cost Ground Station with SatNOGS](sempowisko2025) -- 2025-05-23, SeMPowisko 2025 konference
@@ -28,3 +30,4 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 [TikZ: od zera do elipsy](https://github.com/nkfsuj/latex2024/blob/master/tikz) -- 2024-12-07, LaTeX 2024 workshops
 
 [Wstawianie grafiki: od zera do Worda](https://github.com/nkfsuj/latex2024/blob/master/grafika) -- 2024-12-06, LaTeX 2024 workshops
+
