@@ -9,7 +9,8 @@
 \usepackage{graphicx}
 \usepackage[
   % justification=centering, 
-  font=scriptsize
+  font=scriptsize,
+  figurename=rysunek
 ]{caption}
 \captionsetup{singlelinecheck=off}
 \captionsetup[figure]{textfont={small}}
@@ -119,7 +120,7 @@ breaklines=true
       }
       ;
     \node[yshift=1.0cm,xshift=0.6cm] (logopos) at (current page.south west) {{\begin{tikzpicture}\shuffleducks\duck[signpost=\insertframenumber, \randomhead,scale=.4]\end{tikzpicture}}};
-    \pgfmathsetmacro{\progress}{360*(\insertframenumber)/(\inserttotalframenumber)};
+    \pgfmathsetmacro{\progress}{360*(\insertframenumber)/(\inserttotalframenumber)}%;
     \draw[line width=0.2*3pt] ([xshift=0.55cm] logopos)  arc[radius=0.55cm, start angle=0, end angle=\progress];
     \fill ([shift={(\progress:0.55cm)}] logopos) circle(1pt);
 
@@ -166,12 +167,65 @@ s%
 \end{frame}
 
 \begin{frame}{problem}{}
+ 
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-12-17-11-33-57.png}
+ \caption{komórka (fibroblast) pełznie po podłożu}
+ \end{figure}
+
+\end{frame}
+
+\begin{frame}{problem}{}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-12-17-11-41-12.png}
+ \caption{widok z boku brzegu skupiska komórek (eksplantat)}
+ \end{figure}
+  
+\end{frame}
+
+\begin{frame}{rozwiązanie I: guma silikonowa}{}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{images/2025-12-17-12-22-40.png}
+ \caption{pojedynczy fibroblast serca kury. widać komórkę oraz zmarszczki w podłożu silikonowym stworzone podczas ruchu}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{guma}{}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{images/2025-12-17-12-59-19.png}
+ \caption{kilkanaście fibroblastów. wzór deformacji jest wypadkową deformacji od wielu niezależnie poruszających się komórek}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{puma}{}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2025-12-17-13-16-18.png}
+ \caption{}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{puma}{}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.6\textwidth]{images/2025-12-17-13-25-19.png}
+ \caption{zdjęcie fibroblastów w technice ciemnego pola\footnote{oświetlanie pod dużym kątem i obserwacja światła rozproszonego} po 48h. widoczne dwa centra w~miejscach dwóch eksplanatów}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{rozwiązanie II: poliakrylamid}{}
   
 \end{frame}
 
 \begin{frame}{bibliografia}
-  \nocite{*}
-  \printbibliography
+  \nocite{Trepat_2020,Harris_Wild_Stopak_1980,Dembo_Wang_1999,Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
+  % \nocite{*}
+  \printbibliography[heading=none]
 \end{frame}
 
 
