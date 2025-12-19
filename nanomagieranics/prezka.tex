@@ -149,8 +149,10 @@ s%
 % \definecolor{neworange}{RGB}{255,140,0}
 % \renewcommand{\figurename}{figure}
 
+\setbeamersize{text margin left=1.3cm, text margin right=1.3cm}
 
-\title{Jak zobaczyć siły komórkowe?}
+
+\title{jak zobaczyć siły komórkowe?}
 \subtitle{mądry podtytuł}
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski
 % \\{\scriptsize i pomocnicy z obozów reedukacyjnych w Sinciangu}
@@ -160,18 +162,23 @@ s%
 
 \begin{document}
 
+\nocite{Trepat_2020,
+Harris_Wild_Stopak_1980,
+Weiss_1934,
+Dembo_Wang_1999,
+Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
 \frame{\titlepage}
 
 \begin{frame}{eksperyment}{}
-  
+  % \the\textwidth
 \end{frame}
 
 \begin{frame}{problem}{}
  
 \begin{figure}
  \centering
- \includegraphics[width=0.9\textwidth]{images/2025-12-17-11-33-57.png}
- \caption{komórka (fibroblast) pełznie po podłożu}
+ \includegraphics[width= 0.94023  \textwidth]{images/2025-12-17-11-33-57.png}
+ \caption{komórka (fibroblast) pełznie po podłożu (źródło: \cite{Harris_Wild_Stopak_1980})}
  \end{figure}
 
 \end{frame}
@@ -180,8 +187,8 @@ s%
 
 \begin{figure}
  \centering
- \includegraphics[width=0.9\textwidth]{images/2025-12-17-11-41-12.png}
- \caption{widok z boku brzegu skupiska komórek (eksplantat)}
+ \includegraphics[width=0.94023 \textwidth]{images/2025-12-17-11-41-12.png}
+ \caption{widok z boku brzegu skupiska komórek (eksplantat) (źródło: \cite{Harris_Wild_Stopak_1980})}
  \end{figure}
   
 \end{frame}
@@ -189,23 +196,23 @@ s%
 \begin{frame}{rozwiązanie I: guma silikonowa}{}
   \begin{figure}
  \centering
- \includegraphics[width=0.8\textwidth]{images/2025-12-17-12-22-40.png}
- \caption{pojedynczy fibroblast serca kury. widać komórkę oraz zmarszczki w podłożu silikonowym stworzone podczas ruchu}
+ \includegraphics[width=0.83576 \textwidth]{images/2025-12-17-12-22-40.png}
+ \caption{pojedynczy fibroblast serca kury. widać komórkę oraz zmarszczki w podłożu silikonowym stworzone podczas ruchu (źródło: \cite{Harris_Wild_Stopak_1980})}
  \end{figure}
 \end{frame}
 
 \begin{frame}{guma}{}
   \begin{figure}
  \centering
- \includegraphics[width=0.8\textwidth]{images/2025-12-17-12-59-19.png}
- \caption{kilkanaście fibroblastów. wzór deformacji jest wypadkową deformacji od wielu niezależnie poruszających się komórek}
+ \includegraphics[width=0.679055\textwidth]{images/2025-12-17-12-59-19.png}
+ \caption{kilkanaście fibroblastów. wzór deformacji jest wypadkową deformacji od wielu niezależnie poruszających się komórek (źródło: \cite{Harris_Wild_Stopak_1980})}
  \end{figure}
 \end{frame}
 
 \begin{frame}{puma}{}
   \begin{figure}
  \centering
- \includegraphics[width=0.5\textwidth]{images/2025-12-17-13-16-18.png}
+ \includegraphics[width=0.52235 \textwidth]{images/2025-12-17-13-16-18.png}
  \caption{}
  \end{figure}
 \end{frame}
@@ -213,17 +220,43 @@ s%
 \begin{frame}{puma}{}
   \begin{figure}
  \centering
- \includegraphics[width=0.6\textwidth]{images/2025-12-17-13-25-19.png}
- \caption{zdjęcie fibroblastów w technice ciemnego pola\footnote{oświetlanie pod dużym kątem i obserwacja światła rozproszonego} po 48h. widoczne dwa centra w~miejscach dwóch eksplanatów}
+ \includegraphics[width=0.62682 \textwidth]{images/2025-12-17-13-25-19.png}
+ \caption{zdjęcie fibroblastów w technice ciemnego pola\footnote{oświetlanie pod dużym kątem i obserwacja światła rozproszonego} po 48h. widoczne dwa centra w~miejscach dwóch eksplanatów (źródło: \cite{Harris_Wild_Stopak_1980})}
  \end{figure}
 \end{frame}
 
-\begin{frame}{rozwiązanie II: poliakrylamid}{}
-  
+\begin{frame}{cofamy się do 1934}{}
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.8 \textwidth]{images/2025-12-18-11-50-25.png}
+ \caption{(a) model pokazujący orientację naprężeń w systemie oraz (b,c,d) rzeczywiste struktury komórek i włókien nerwowych na osoczu krwi (źródło: \cite{Weiss_1934})}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{rozwiązanie II: poliakrylamid (1999)}{}
+%   \begin{figure}
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{images/2025-12-19-00-45-27.png}
+%  \caption{(źródło: \cite{Dembo_Wang_1999})}
+%  \end{figure}
+\begin{figure}
+\begin{subfigure}{0.45\textwidth}
+ \centering
+ ~
+ \vspace{0.5cm}
+ \includegraphics[width=0.9\textwidth]{images/2025-12-19-00-48-20.png}
+%  \caption{}
+ \end{subfigure}
+ \begin{subfigure}{0.45\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2025-12-19-00-48-37.png}
+%  \caption{}
+ \end{subfigure}
+ \caption{(źródło: \cite{Dembo_Wang_1999})}
+ \end{figure}
 \end{frame}
 
 \begin{frame}{bibliografia}
-  \nocite{Trepat_2020,Harris_Wild_Stopak_1980,Dembo_Wang_1999,Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   % \nocite{*}
   \printbibliography[heading=none]
 \end{frame}
