@@ -160,6 +160,8 @@ s%
 \institute[fais uj]{(bio)fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
 \date[dzisiaj]{dzisiaj, \today}
 
+\newcommand{\um}{\si{\micro\meter}}
+
 \begin{document}
 
 \nocite{Trepat_2020,
@@ -169,15 +171,22 @@ Dembo_Wang_1999,
 Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
 \frame{\titlepage}
 
-\begin{frame}{eksperyment}{}
+\begin{frame}{problem}{}
   % \the\textwidth
   \begin{figure}
  \centering
  \includegraphics[width=0.5\textwidth]{images/2025-12-19-13-11-38.png}
- \caption{ruchliwa komórka, np.  (źródło: wikipedia)}
+ \caption{ruchliwa komórka, np. komórka nerwowa albo tkanki łącznej (źródło: wikipedia)}
  \end{figure}
 \end{frame}
 
+\begin{frame}{rozwiązanie I: guma silikonowa}{}
+\begin{itemize}
+  \item artykuł: \cite{Harris_Wild_Stopak_1980}
+  \item podłoże: polidimetylosiloksan (PDMS)
+  \item przygotowanie: usieciowanie (palnikiem) warstwy o grubości 1 \si{\micro\meter}
+\end{itemize}
+\end{frame}
 
 
 \begin{frame}{problem}{}
@@ -200,19 +209,12 @@ Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   
 \end{frame}
 
-\begin{frame}{rozwiązanie I: guma silikonowa}{}
-\begin{itemize}
-  \item artykuł: \cite{Harris_Wild_Stopak_1980}
-  \item podłoże: polidimetylosiloksan (PDMS)
-  \item przygotowanie: usieciowanie (palnikiem) warstwy o grubości 1 \si{\micro\meter}
-\end{itemize}
-\end{frame}
 
 \begin{frame}{rozwiązanie I: guma silikonowa}{}
   \begin{figure}
  \centering
  \includegraphics[width=0.83576 \textwidth]{images/2025-12-17-12-22-40.png}
- \caption{pojedynczy fibroblast serca kury. widać komórkę oraz zmarszczki w podłożu silikonowym stworzone podczas ruchu (źródło: \cite{Harris_Wild_Stopak_1980})}
+ \caption{pojedynczy fibroblast serca kury. widać komórkę oraz zmarszczki w podłożu silikonowym stworzone podczas ruchu (źródło: \cite{Harris_Wild_Stopak_1980}) (skala 50 \um)}
  \end{figure}
 \end{frame}
 
@@ -220,7 +222,7 @@ Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   \begin{figure}
  \centering
  \includegraphics[width=0.679055\textwidth]{images/2025-12-17-12-59-19.png}
- \caption{kilkanaście fibroblastów. wzór deformacji jest wypadkową deformacji od wielu niezależnie poruszających się komórek (źródło: \cite{Harris_Wild_Stopak_1980})}
+ \caption{kilkanaście fibroblastów. wzór deformacji jest wypadkową deformacji od wielu niezależnie poruszających się komórek (źródło: \cite{Harris_Wild_Stopak_1980}) (skala 100 \um)}
  \end{figure}
 \end{frame}
 
@@ -237,7 +239,7 @@ Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{images/2025-12-19-12-19-57.png}
- \caption{klatka z filmu pokazująca poczatek ruchu komórki linii PTK-1. ciemna obwódka pokazuje gdzie warstwa jest rozciągana (źródło: \cite{Harris_Wild_Stopak_1980})}
+ \caption{klatka z filmu pokazująca poczatek ruchu komórki linii PTK-1. ciemna obwódka pokazuje gdzie warstwa jest rozciągana (źródło: \cite{Harris_Wild_Stopak_1980}) (skala 20 \um)}
  \end{figure}
   
 \end{frame}
@@ -246,7 +248,7 @@ Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   \begin{figure}
  \centering
  \includegraphics[width=0.62682 \textwidth]{images/2025-12-17-13-25-19.png}
- \caption{zdjęcie fibroblastów w technice ciemnego pola\footnote{oświetlanie pod dużym kątem i obserwacja światła rozproszonego} po 48h. widoczne dwa centra w~miejscach dwóch eksplanatów (źródło: \cite{Harris_Wild_Stopak_1980})}
+ \caption{zdjęcie fibroblastów w technice ciemnego pola\footnote{oświetlanie pod dużym kątem i obserwacja światła rozproszonego} po 48h. widoczne dwa centra w~miejscach dwóch eksplanatów (źródło: \cite{Harris_Wild_Stopak_1980}) (skala 1 mm)}
  \end{figure}
 \end{frame}
 
@@ -349,7 +351,7 @@ Butler_Tolić-Nørrelykke_Fabry_Fredberg_2002}
   \begin{itemize}[<+->]
     \item podłoże jest deformowane przez siły trakcyjne
     \item siły są mierzalne
-    \item \(\to\) TFM
+    \item \(\to\) TFM (\emph{traction force microscopy})
     \item lamellipodium ciągnie, ogon się wlecze
   \end{itemize}
 \end{frame}
