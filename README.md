@@ -3,6 +3,8 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
+[jak zobaczyć siły komórkowe](nanomagieranics) -- 2025-12-19, Nanomechanics of biological systems course
+
 [Modelowanie ruchu pieszych i innych interakcji międzyludzkich](autumn2025) -- 2025-11-15, Vulture Circle Autumn School 2025
 
 [Efekt hydrofobowy, za: Charles Tanford  The hydrophobic effect: formation of micelles](sb22) -- 2025-06-04, Specialisation Seminar II (biophysics)
