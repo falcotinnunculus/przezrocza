@@ -1,0 +1,36 @@
+ @misc{Smitty_2021,
+  title        = {How PNG compresses images using filters},
+  url          = {https://observablehq.com/@smitop/png-filters},
+  abstractnote = {PNG compression is surprisingly simple. You take the raw pixel data, filter it, and run it through zlib. The filtering stage doesn’t affect the uncompressed size, but instead tries to get it into a form that zlib can compress better. Filtering is the only image-specific compression mechanism used in PNG. PNG compression programs like Pngcrush use herusitics to find the optimal zlib parameters that result in the smallest size. By default, Pngcrush just uses the no-op filter, but each scanline of an image can},
+  journal      = {Observable},
+  author       = {Smitty},
+  year         = {2021},
+  month        = nov
+}
+
+ @misc{AVIF_has_landed_2020,
+  url          = {https://jakearchibald.com/2020/avif-has-landed/},
+  abstractnote = {AVIF is the first browser image format we’ve had in 10 years. Let’s see how it performs…},
+  year         = {2020},
+  month        = sep,
+  language     = {en}
+}
+
+ @misc{Decoding_AVIF_2021,
+  url          = {https://evilmartians.com/chronicles/decoding-avif-deep-dive-with-cats-and-imgproxy},
+  abstractnote = {It is time to talk seriously about AVIF, how it is different from predecessors, and how to start using it for web images today with the help of dead-simple and reliable self-hosted image converter from Evil Martians},
+  journal      = {evilmartians.com},
+  year         = {2021},
+  month        = aug,
+  language     = {en}
+}
+
+ @misc{Techniki_kompresji_WebP,
+  url      = {https://developers.google.com/speed/webp/docs/compression?hl=pl},
+  journal  = {Google for Developers},
+  language = {pl-x-mtfrom-en}
+}
+
+ @misc{PNG_Specification,
+  url = {https://www.w3.org/TR/PNG-Filters.html}
+}
