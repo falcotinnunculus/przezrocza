@@ -7,6 +7,8 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 [Modelowanie ruchu pieszych i innych interakcji międzyludzkich](autumn2025) -- 2025-11-15, Vulture Circle Autumn School 2025
 
+[Elektromagnetycznie indukowana przezroczystość](ei-przezrocza) -- 2025-06-06, Atomic Physics course
+
 [Efekt hydrofobowy, za: Charles Tanford  The hydrophobic effect: formation of micelles](sb22) -- 2025-06-04, Specialisation Seminar II (biophysics)
 
 [Talking with the Satellites: Building a Low-Cost Ground Station with SatNOGS](sempowisko2025) -- 2025-05-23, SeMPowisko 2025 konference
@@ -31,7 +33,14 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## some other _przezrocza_ not in this repo
 
+[TikZ: od zera do elipsy](https://github.com/nkfsuj/latex2025/blob/master/tikz) -- 2025-12-12, LaTeX 2025 workshops
+
+[Wstawianie grafiki: od zera do Worda](https://github.com/nkfsuj/latex2024/blob/master/grafika) -- 2025-12-13, LaTeX 2025 workshops
+
 [TikZ: od zera do elipsy](https://github.com/nkfsuj/latex2024/blob/master/tikz) -- 2024-12-07, LaTeX 2024 workshops
 
 [Wstawianie grafiki: od zera do Worda](https://github.com/nkfsuj/latex2024/blob/master/grafika) -- 2024-12-06, LaTeX 2024 workshops
 
+## some _plakaty_ that technically are not _przezrocza_ but I don't care
+
+[A treatise on shelling bananas, or why one should not put antimatter in gravitational field](a_treatise) -- 2026-04-25, SeMPowisko 2026 konference
