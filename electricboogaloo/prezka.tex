@@ -1,0 +1,150 @@
+\documentclass[aspectratio=1612]{beamer}
+\usepackage[utf8]{inputenc}
+% \usepackage{polski}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{tikzducks}
+% \usetikzlibrary{decorations.pathmorphing}
+\usepackage{multimedia}
+\usepackage{graphicx}
+\usepackage[
+  % justification=centering, 
+  font=scriptsize,
+  figurename=figure
+]{caption}
+\captionsetup{singlelinecheck=off}
+\captionsetup[figure]{textfont={small}}
+\setbeamerfont{caption}{size=\small}
+\usepackage{textcomp}
+\usepackage{appendixnumberbeamer}
+\usepackage{qrcode}
+% \usepackage[natbib, language=polish, sorting=none]{biblatex}
+% \addbibresource{lio.bib}
+\usepackage{hyperref}
+%\usepackage[width=\textwidth]{animate}
+%\usepackage{chemformula}
+\usepackage{sidecap}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{anyfontsize} % change font size for semposiwko
+
+\geometry{margin=0.5cm}
+
+% \usepackage{physics}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{transparent}
+\usepackage{siunitx}
+% \usepackage[rightcaption]{sidecap}
+\usepackage{eso-pic}
+
+\usepackage{amsmath,amsthm,amssymb}
+\DeclareMathOperator{\sgn}{sgn}
+
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+
+\usepackage{subcaption}
+
+\usepackage[natbib, sorting=none, style=authoryear]{biblatex}
+\addbibresource{lio.bib}
+\renewcommand*{\bibfont}{\scriptsize}
+
+\usefonttheme[onlymath]{serif}
+
+\usetheme{Szeged}
+\usecolortheme{whale}
+\setbeamercolor{palette primary}{bg=violet!80!black,fg=white}
+\setbeamercolor{palette secondary}{bg=violet!60!black,fg=white}
+\setbeamercolor{palette tertiary}{bg=violet!40!black,fg=white}
+\setbeamercolor{palette quaternary}{bg=violet!20!black,fg=white}
+\setbeamercolor{structure}{fg=violet!60!black}
+
+
+\linespread{0.8}
+
+\setbeamertemplate{background}%
+{%
+    \begin{tikzpicture}[remember picture,overlay]{\node[yshift=1.5cm,xshift=-2cm,opacity=0.1] at (current page.south east)
+      {
+      \includegraphics[scale=0.4, angle=25]{ptaki.pdf}
+      }
+      ;
+    \node[yshift=-2cm,xshift=-2cm,opacity=0.1] at (current page.north east)
+      {
+      \includegraphics[scale=0.1, angle=0]{zarowki.pdf}
+      }
+      ;
+    \node[yshift=1.0cm,xshift=0.6cm] (logopos) at (current page.south west) {{\begin{tikzpicture}\shuffleducks\duck[signpost=\insertframenumber, \randomhead,scale=.4]\end{tikzpicture}}};
+    \pgfmathsetmacro{\progress}{360*(\insertframenumber)/(\inserttotalframenumber)}%;
+    \draw[line width=0.2*3pt] ([xshift=0.55cm] logopos)  arc[radius=0.55cm, start angle=0, end angle=\progress];
+    \fill ([shift={(\progress:0.55cm)}] logopos) circle(1pt);
+
+    }
+        \end{tikzpicture}
+    
+}
+
+
+
+
+\setbeamersize{text margin left=1.3cm, text margin right=1.3cm}
+
+
+\title{sample title}
+\subtitle{sample subtitle}
+\author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski
+% \\{\scriptsize i pomocnicy z obozów reedukacyjnych w Sinciangu}
+}
+\institute[fais uj]{fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
+\date[today]{today, \today}
+
+\newcommand{\um}{\si{\micro\meter}}
+
+\begin{document}
+
+
+\frame{\titlepage}
+
+\begin{frame}{problem}{}
+
+% \begin{tikzpicture}[remember picture,overlay]
+% \draw [line width=1cm,blue] (current page.south east) rectangle (current page.north west);
+% \end{tikzpicture}
+
+
+  \begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2026-04-30-14-14-07.png}
+ \caption{a banana}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{a bit of theory}{why are we even bothering to measure it?}
+
+
+  
+\end{frame}
+
+
+
+\begin{frame}{bibliografia}{}
+  % \nocite{*}
+  \printbibliography[heading=none]
+\end{frame}
+
+
+\begin{frame}{koniec}{}
+
+% \duck
+
+\end{frame}
+
+
+
+\end{document}
