@@ -8,7 +8,7 @@
 \usepackage{multimedia}
 \usepackage{graphicx}
 \usepackage[
-  % justification=centering, 
+  justification=centering, 
   font=scriptsize,
   figurename=figure
 ]{caption}
@@ -29,7 +29,9 @@
 \usepackage{rotating}
 \usepackage{anyfontsize} % change font size for semposiwko
 
-\geometry{margin=0.5cm}
+% \geometry{margin=0.5cm}
+\setbeamertemplate{headline}{\vspace*{-3mm}} % adjust top reserved area 
+\setbeamertemplate{footline}{\vspace*{3mm}} % adjust bottom reserved area
 
 % \usepackage{physics}
 \usepackage{array}
@@ -75,7 +77,7 @@ breaklines=true
       \includegraphics[scale=0.4, angle=25]{ptaki.pdf}
       }
       ;
-    \node[yshift=-2cm,xshift=-2cm,opacity=0.1] at (current page.north east)
+    \node[yshift=-2cm,xshift=-2cm,opacity=0.05] at (current page.north east)
       {
       \includegraphics[scale=0.1, angle=0]{zarowki.pdf}
       }
@@ -96,12 +98,12 @@ breaklines=true
 \setbeamersize{text margin left=1.3cm, text margin right=1.3cm}
 
 
-\title{sample title}
-\subtitle{sample subtitle}
+\title[long title about positronia]{Sensitivity Comparison of Atomic Interferometers for Gravitational Measurements on Positronium Using Monte Carlo Simulations}
+\subtitle{or Treatise on Shelling Bananas}
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski
 % \\{\scriptsize i pomocnicy z obozów reedukacyjnych w Sinciangu}
 }
-\institute[fais uj]{fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
+\institute[m. winiarski, fais uj]{fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
 \date[today]{today, \today}
 
 \newcommand{\um}{\si{\micro\meter}}
@@ -110,6 +112,12 @@ breaklines=true
 
 
 \frame{\titlepage}
+
+\begin{frame}{contents}
+  \tableofcontents
+\end{frame}
+
+\section{what is positronium}
 
 \begin{frame}{problem}{}
 
@@ -125,24 +133,167 @@ breaklines=true
  \end{figure}
 \end{frame}
 
-\begin{frame}{a bit of theory}{why are we even bothering to measure it?}
+\begin{frame}{what is a positronium?}{}
+\[
+\resizebox{0.4\textwidth}{!}{
+$
+\underbrace{\text{positr}}_{{\small e^+\text{ and }e^-}} 
+\underbrace{\text{onium}}_{\small \text{bound state}}
+$
+}
+\]
 
-
-  
+\begin{figure}
+ \centering
+ \includegraphics[width=0.5\textwidth]{images/2026-05-12-21-30-14.png}
+ \caption{artistic image of positronium}
+ \end{figure}
 \end{frame}
 
 
+\begin{frame}{positronium states}{and a quick repeat from atomic physics}
 
-\begin{frame}{bibliografia}{}
+  \begin{itemize}
+    \item para-positronium $1^1S_0$
+    \item ortho-positronium $1^3S_1$
+    \item meta-stable-positronium $2^3S_1$
+  \end{itemize}
+\vspace{1cm}
+  what does this mean?
+
+  $$n^{2S+1}L_{m_S}$$
+  $$\vec{J}=\vec{L}+\vec{S}$$
+  
+\end{frame}
+
+\begin{frame}{how to obtain meta-stable state?}{}
+  it's hard
+\end{frame}
+
+\begin{frame}{fundamental forces in physics}{}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{images/1489.png}
+  \pause
+  \caption{"Of these four forces, there's one we don't really understand." "Is it the weak force or the strong--" "It's gravity."}
+\end{figure}
+  
+\end{frame}
+
+\section{why is it interesting}
+
+\begin{frame}{why do we bother?}{}
+  
+\begin{quotation}
+‘But in any event, it is in the hands of our generation to perform an experiment to measure the gravitational acceleration of antimatter. Some day it will be done, whether we do it or not. It will be done. If we do not do it, and the answer eventually turns out to be what we expect, then future generations will look back upon us and say it was a shame. But if the answer turns out to be a surprise, then, if we do not do it, future generations will look back upon us and say we were fools.’
+\end{quotation}
+\raggedleft -- M. M. Nieto et al. Theoretical Motivation for Gravitation Experiments on UltraLow Energy Antiprotons and Antihydrogen. arXiv, 1994.
+
+\end{frame}
+
+\begin{frame}{a bit of theory}{why are we even bothering to measure it?}
+
+% In theory, according to several simple arguments, antimatter should fall just like ordinary matter.
+
+        % \vspace{4mm}
+
+        \begin{itemize}
+        %   \setlength{\itemindent}{0em}
+            \item \textbf{CPT% {\rm(charge+parity+time)}
+            \ symmetry:} according to the CPT theorem, antimatter should experience the same gravitational acceleration as matter
+            \item \textbf{photon behaviour:} photons are their own antiparticles, and they act just like General Relativity laws tell them so
+            \item \textbf{conservation of energy:} if antimatter goes up, we can annihilate it "higher" than it was produced
+        \end{itemize}
+      \end{frame}
+      \begin{frame}{a bit of theory...}{}
+        However...
+        \begin{itemize}
+            \item \textbf{Kowitt theory:} antiparticles are "holes" in Dirac particle sea with negative gravitational mass
+            \item \textbf{Santilli-Villata theory:} antimatter exists in inverted space-time, which is projected to our reality as negative motion
+            \item \textbf{Cabbolet's theory:} particles move in "stepwise" motion, alternating between state of rest and "wave--like" movement
+            \item \textbf{dark matter???}%
+        \end{itemize}
+
+\end{frame}
+
+\section{how to do it}
+
+\begin{frame}{Moir\'e deflectometer}{}
+  
+\end{frame}
+
+\begin{frame}{Mach-Zehnder interferometer}{}
+
+\end{frame}
+
+\begin{frame}{Talbot-Lau interferometer}{}
+
+\end{frame}
+
+\begin{frame}{Stern-Gerlach interferometer}{}
+
+\end{frame}
+
+
+\section{why is it hard}
+
+
+\begin{frame}{why is it hard}{}
+
+\end{frame}
+
+
+\begin{frame}{bibliography}{}
   % \nocite{*}
   \printbibliography[heading=none]
 \end{frame}
 
 
-\begin{frame}{koniec}{}
+\begin{frame}{the end}{}
 
-% \duck
+\centering
 
+\begin{tikzpicture}
+  \coordinate (head) at (0.7,1.55);
+
+  % Tylna część orbity pozytronium: ta sama elipsa, ale narysowana za głową.
+  \begin{scope}[shift={(head)}, rotate=-12]
+    \draw[blue!70!black, thick, dashed, line cap=round]
+      (30:0.85 and 0.35)
+      arc[start angle=30, end angle=210, x radius=0.85, y radius=0.35];
+  \end{scope}
+
+\duck[parrot, 
+body=gray!30!yellow, 
+head=gray!30!yellow, 
+bill=red, 
+% torch=gray!70!brown, 
+tshirt=white!50!black, 
+ribbon=gray, 
+bowtie=blue!50!black]
+
+  % Przednia część orbity pozytronium: dokładne dopełnienie tylnego łuku.
+  \begin{scope}[shift={(head)}, xshift=-0.2cm, yshift=-0.45cm, rotate=-12]
+    \draw[blue!70!black, thick, dashed, line cap=round]
+      (210:0.85 and 0.35)
+      arc[start angle=210, end angle=390, x radius=0.85, y radius=0.35];
+  \end{scope}
+
+  \shade[ball color=blue!70!black] (0.03,1.72) circle[radius=0.15]
+    node[white, font=\scriptsize] {$-$};
+  \shade[ball color=red!70!black] (1.36,1.35) circle[radius=0.15]
+    node[white, font=\scriptsize] {$+$};
+  \node[font=\scriptsize, blue!70!black] at (-0.20,1.98) {$e^-$};
+  \node[font=\scriptsize, red!70!black] at (1.75,1.58) {$e^+$};
+\end{tikzpicture}
+
+\end{frame}
+
+\appendix
+
+\begin{frame}{(backup) why is it hard 2: electric boogaloo}{(or why is it hard for me)}
+  
 \end{frame}
 
 
