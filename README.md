@@ -4,6 +4,8 @@ Repository for _przezrocza_ (slides) used in my _seminaria_ (presentations) from
 
 ## list
 
+[Sensitivity Comparison of Atomic Interferometers for Gravitational Measurements on Positronium Using Monte Carlo Simulations, or Treatise on Shelling Bananas](electricboogaloo) -- 2026-05-14, Master Seminar II: Electric Boogaloo (physics)
+
 [jak zobaczyć siły komórkowe](nanomagieranics) -- 2025-12-19, Nanomechanics of biological systems course
 
 [Modelowanie ruchu pieszych i innych interakcji międzyludzkich](autumn2025) -- 2025-11-15, Vulture Circle Autumn School 2025

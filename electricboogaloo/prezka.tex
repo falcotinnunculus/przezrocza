@@ -10,7 +10,8 @@
 \usepackage[
   justification=centering, 
   font=scriptsize,
-  figurename=figure
+  figurename=figure,
+  tablename=table
 ]{caption}
 \captionsetup{singlelinecheck=off}
 \captionsetup[figure]{textfont={small}}
@@ -20,7 +21,6 @@
 \usepackage{qrcode}
 % \usepackage[natbib, language=polish, sorting=none]{biblatex}
 % \addbibresource{lio.bib}
-\usepackage{hyperref}
 %\usepackage[width=\textwidth]{animate}
 %\usepackage{chemformula}
 \usepackage{sidecap}
@@ -56,6 +56,9 @@ breaklines=true
 \usepackage[natbib, sorting=none, style=authoryear]{biblatex}
 \addbibresource{lio.bib}
 \renewcommand*{\bibfont}{\scriptsize}
+
+\usepackage{hyperref} % pamiętaj żeby była na końcu
+
 
 \usefonttheme[onlymath]{serif}
 
@@ -103,10 +106,11 @@ breaklines=true
 \author[M. Winiarski]{Mateusz ,,\(\blacksquare\)'' Winiarski
 % \\{\scriptsize i pomocnicy z obozów reedukacyjnych w Sinciangu}
 }
-\institute[m. winiarski, fais uj]{fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
+\institute[mateusz winiarski, fais uj]{fizyka\(^\dagger\), FAIS, Uniwersytet Jagielloński} 
 \date[today]{today, \today}
 
 \newcommand{\um}{\si{\micro\meter}}
+\newcommand{\us}{\si{\micro\second}}
 
 \begin{document}
 
@@ -129,8 +133,29 @@ breaklines=true
   \begin{figure}
  \centering
  \includegraphics[width=0.5\textwidth]{images/2026-04-30-14-14-07.png}
- \caption{a banana}
+ \caption{a banana\onslide<2>{, and $^{40}$K decay modes table}}
  \end{figure}
+
+ \pause
+
+ \begin{tikzpicture}[remember picture,overlay] % węzeł w konkretnej pozycji względem dolnego lewego rogu strony 
+  \node[anchor=south west, xshift=1cm, yshift=5cm] (mytable) at (current page.south west) {
+  % \begin{table}
+  % \centering
+  % $^40$K decay modes
+  \begin{tabular}{llS} 
+    \toprule 
+    type & result & probability \\
+    \midrule 
+    $\beta-$ &  $^{40}$Ca & 89.6\% \\
+    EC &  $^{40}$Ar$^*$ & 10.3\% \\ 
+    direct EC & $^{40}$Ar & 0.1\% \\ 
+    $\beta+$ &  $^{40}$Ar & 0.001\% \\ 
+    \bottomrule 
+  \end{tabular} 
+  % \end{table}
+  }; 
+\end{tikzpicture}
 \end{frame}
 
 \begin{frame}{what is a positronium?}{}
@@ -154,11 +179,11 @@ $
 \begin{frame}{positronium states}{and a quick repeat from atomic physics}
 
   \begin{itemize}
-    \item para-positronium $1^1S_0$
-    \item ortho-positronium $1^3S_1$
-    \item meta-stable-positronium $2^3S_1$
+    \item para-positronium $1^1S_0$: $T_{1/2}=125$ ps
+    \item ortho-positronium $1^3S_1$: $T_{1/2}=142$ ns
+    \visible<2->{\item meta-stable-positronium $2^3S_1$: $T_{1/2}=1.14$ \us}
   \end{itemize}
-\vspace{1cm}
+\vspace{1cm}\visible<3->
   what does this mean?
 
   $$n^{2S+1}L_{m_S}$$
@@ -169,6 +194,13 @@ $
 \begin{frame}{how to obtain meta-stable state?}{}
   it's hard
 \end{frame}
+
+\begin{frame}{how to obtain positronium beam?}{}
+  lasers  
+\end{frame}
+
+\section{why is it interesting}
+
 
 \begin{frame}{fundamental forces in physics}{}
 
@@ -181,7 +213,6 @@ $
   
 \end{frame}
 
-\section{why is it interesting}
 
 \begin{frame}{why do we bother?}{}
   
@@ -221,13 +252,39 @@ $
 
 \begin{frame}{Moir\'e deflectometer}{}
   
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2026-05-12-23-32-44.png}
+ \caption{(source: \cite{Mariazzi_Caravita_Doser_Nebbia_Brusa_2020})}
+ \end{figure}
+
 \end{frame}
 
 \begin{frame}{Mach-Zehnder interferometer}{}
 
+\begin{figure}
+
+\begin{subfigure}{0.49\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2026-05-13-00-28-37.png}
+ \caption{(source: \cite{Oberthaler_Bernet_Rasel_Schmiedmayer_Zeilinger_1996})}
+ \end{subfigure}
+\begin{subfigure}{0.49\textwidth}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2026-05-13-00-27-52.png}
+ \caption{(source: \cite{Mariazzi_Caravita_Doser_Nebbia_Brusa_2020})}
+ \end{subfigure}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}{Talbot-Lau interferometer}{}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.9\textwidth]{images/2026-05-13-11-52-42.png}
+ \caption{(source: \cite{Bräunig_2015})}
+ \end{figure}
 
 \end{frame}
 
@@ -254,6 +311,8 @@ $
 
 \centering
 
+thank you for attention
+
 \begin{tikzpicture}
   \coordinate (head) at (0.7,1.55);
 
@@ -264,14 +323,17 @@ $
       arc[start angle=30, end angle=210, x radius=0.85, y radius=0.35];
   \end{scope}
 
-\duck[parrot, 
+\duck[
+parrot, 
 body=gray!30!yellow, 
 head=gray!30!yellow, 
 bill=red, 
 % torch=gray!70!brown, 
 tshirt=white!50!black, 
 ribbon=gray, 
-bowtie=blue!50!black]
+bowtie=blue!50!black,
+mohican=black
+]
 
   % Przednia część orbity pozytronium: dokładne dopełnienie tylnego łuku.
   \begin{scope}[shift={(head)}, xshift=-0.2cm, yshift=-0.45cm, rotate=-12]
@@ -287,6 +349,11 @@ bowtie=blue!50!black]
   \node[font=\scriptsize, blue!70!black] at (-0.20,1.98) {$e^-$};
   \node[font=\scriptsize, red!70!black] at (1.75,1.58) {$e^+$};
 \end{tikzpicture}
+
+\vfill
+  \qrcode[height=0.2\textwidth]{https://github.com/falcotinnunculus/przezrocza/blob/wladca/electricboogaloo/prezka.pdf}
+
+  {\tiny \url{https://github.com/falcotinnunculus/przezrocza/blob/wladca/electricboogaloo/prezka.pdf}}
 
 \end{frame}
 
