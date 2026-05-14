@@ -111,6 +111,10 @@ breaklines=true
 
 \newcommand{\um}{\si{\micro\meter}}
 \newcommand{\us}{\si{\micro\second}}
+\DeclareSIUnit\year{yr}
+\sisetup{multi-part-units=single}
+
+
 
 \begin{document}
 
@@ -191,8 +195,13 @@ $
   
 \end{frame}
 
-\begin{frame}{how to obtain meta-stable state?}{}
-  it's hard
+\begin{frame}{how to obtain meta-stable beam?}{}
+  \[
+\begin{array}{c}
+1^{3}S \xrightarrow[205\;\mathrm{nm}]{\text{laser}} 3^{3}P \\[10pt]
+3^{3}P \xrightarrow[1312\;\mathrm{nm}\;\text{stimulated}]{\text{spontaneous or}} 2^{3}S
+\end{array}
+\]
 \end{frame}
 
 \begin{frame}{how to obtain positronium beam?}{}
@@ -288,15 +297,29 @@ $
 
 \end{frame}
 
-\begin{frame}{Stern-Gerlach interferometer}{}
+% \begin{frame}{Stern-Gerlach interferometer}{}
 
-\end{frame}
+% \end{frame}
 
 
 \section{why is it hard}
 
 
-\begin{frame}{why is it hard}{}
+\begin{frame}{why is it hard}{or: why hasn't it been done before}
+  % {\rm This page is intentionally left blank}
+
+\begin{table}
+  \begin{tabular}{lr}
+\toprule
+device &  \multicolumn{1}{c}{\(1\,g\) measurement time}\\
+\midrule
+moiré & 22000 \si\year \\
+Mach-Zehnder & 5.8 \si\year \\
+Talbot-Lau & 730 \si\year \\
+\bottomrule
+\end{tabular}
+\end{table}
+% \end{table}
 
 \end{frame}
 
@@ -359,8 +382,8 @@ mohican=black
 
 \appendix
 
-\begin{frame}{(backup) why is it hard 2: electric boogaloo}{(or why is it hard for me)}
-  
+\begin{frame}{(backup) why is it hard 2: electric boogaloo}{or: why haven't I done it yet}
+  {\rm This page is intentionally left blank}
 \end{frame}
 
 
